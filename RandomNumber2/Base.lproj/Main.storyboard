@@ -45,7 +45,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="Seed" destination="99o-zb-ctZ" id="sPA-r1-roG"/>
                         <outlet property="output" destination="TWO-rh-mxZ" id="spR-Sd-STH"/>
                     </connections>
                 </viewController>
