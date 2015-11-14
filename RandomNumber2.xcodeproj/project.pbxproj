@@ -97,11 +97,11 @@
 		CE983ED31BF7B126000C63FB /* RandomNumber2 */ = {
 			isa = PBXGroup;
 			children = (
+				CE983F041BF7B151000C63FB /* Controller */,
+				CE983F031BF7B14A000C63FB /* View */,
+				CE983F021BF7B143000C63FB /* Model */,
 				CE983ED41BF7B126000C63FB /* AppDelegate.swift */,
-				CE983ED61BF7B126000C63FB /* ViewController.swift */,
-				CE983ED81BF7B126000C63FB /* Main.storyboard */,
 				CE983EDB1BF7B126000C63FB /* Assets.xcassets */,
-				CE983EDD1BF7B126000C63FB /* LaunchScreen.storyboard */,
 				CE983EE01BF7B126000C63FB /* Info.plist */,
 			);
 			path = RandomNumber2;
@@ -123,6 +123,30 @@
 				CE983EF61BF7B126000C63FB /* Info.plist */,
 			);
 			path = RandomNumber2UITests;
+			sourceTree = "<group>";
+		};
+		CE983F021BF7B143000C63FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE983F031BF7B14A000C63FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE983EDD1BF7B126000C63FB /* LaunchScreen.storyboard */,
+				CE983ED81BF7B126000C63FB /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE983F041BF7B151000C63FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE983ED61BF7B126000C63FB /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
