@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var output: UILabel!
+    @IBOutlet weak var timeL: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        timeL.text = "\(NSDate())"
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +32,9 @@ class ViewController: UIViewController {
     @IBAction func Seed(sender: AnyObject) {
         srandom(CUnsignedInt(time(nil)))
         output.text = "Generator seeded"
+    }
+    @IBAction func update(sender: AnyObject) {
+        timeL.text = "\(NSDate())"
     }
 }
 
