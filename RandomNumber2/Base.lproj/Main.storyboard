@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99o-zb-ctZ">
-                                <rect key="frame" x="93" y="161" width="228" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Seed Random Number Generator"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXW-sK-90r">
-                                <rect key="frame" x="113" y="233" width="189" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Generate a random number"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWO-rh-mxZ">
                                 <rect key="frame" x="170" y="319" width="75" height="29"/>
                                 <animations/>
@@ -33,11 +23,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99o-zb-ctZ">
+                                <rect key="frame" x="93" y="161" width="228" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seed Random Number Generator"/>
+                                <connections>
+                                    <action selector="Seed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svi-CK-Yib"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXW-sK-90r">
+                                <rect key="frame" x="113" y="235" width="189" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Generate a random number"/>
+                                <connections>
+                                    <action selector="Generate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdp-XF-2os"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Seed" destination="99o-zb-ctZ" id="sPA-r1-roG"/>
+                        <outlet property="output" destination="TWO-rh-mxZ" id="spR-Sd-STH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
